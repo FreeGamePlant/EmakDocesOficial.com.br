@@ -1,0 +1,301 @@
+body {
+    background-color: rgb(255, 114, 161);
+}
+
+h1 {
+    color: rgb(83, 40, 0);
+    text-align: center;
+    font-family: cursive;
+    background-color: white;
+    border: solid 2px rgb(83, 40, 0);
+}
+
+a {
+    color: rgb(83, 40, 0);
+    text-decoration: none;
+}
+
+.s {
+    background-color: white;
+    padding: 4px;
+}
+.s:hover {
+    background-color: black;
+    color: white;
+}
+
+.l {
+    background-color: rgb(255, 255, 255);
+    padding: 4px;
+}
+.l:hover {
+    background-color: black;
+    color: white;
+}
+
+.c {
+    background-color: rgb(255, 255, 255);
+    padding: 4px;
+}
+.c:hover {
+    background-color: black;
+    color: white;
+}
+
+.i {
+    background-color: rgb(255, 255, 255);
+    padding: 4px;
+}
+.i:hover {
+    background-color: black;
+    color: white;
+}
+
+.conteiner-alpha {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px rgb(83, 40, 0);
+    position: relative;
+    top: -23px;
+    background-color: white;
+    padding: 5px;
+    word-spacing: 5px;
+    flex-wrap: wrap;
+}
+
+.f {
+    background-color: rgb(255, 209, 209);
+}
+
+#sobre {
+    background-color: #ffffff;
+    border: dashed 5px rgb(255, 0, 0);
+    padding: 5px;
+    word-spacing: 5px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: solid 5px rgb(255, 0, 0);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    border: solid 2px rgb(83, 40, 0);
+    background-color: white;
+}
+
+h2 {
+    color: rgb(83, 40, 0);
+    text-align: center;
+    font-family: cursive;
+    background-color: white;
+    border: solid 2px rgb(83, 40, 0);
+}
+
+.esquerda {
+    display: inline-block;
+    background-color: violet;
+    border: solid 2px rgb(83, 40, 0);
+    padding: 10px;
+    border-radius: 45%;
+    margin: 0 auto;
+    position:absolute;
+    left: 1%;
+}
+
+.direita {
+    display: inline-block;
+    background-color: violet;
+    border: solid 2px rgb(83, 40, 0);
+    padding: 10px;
+    border-radius: 45%;
+    margin: 0 auto;
+    align-items: right;
+    justify-self: end;
+    position: absolute;
+    right: 1%;
+}
+
+.ok {
+    display: inline-block;
+    background-color: violet;
+    border: solid 2px rgb(83, 40, 0);
+    padding: 10px;
+    border-radius: 45%;
+    margin: 0 auto;
+    align-items: center;
+    justify-self: center;
+    position: absolute;
+    top: 24px;
+}
+.ok:hover {
+    background-color: black;
+    color: white;
+}
+
+#alpha {
+    position:absolute;
+    top: 535px;
+}
+
+#beta {
+    position:absolute;
+    top: 535px;
+}
+
+#charle {
+    position:absolute;
+    top: 930px;
+}
+
+#delta {
+    position:absolute;
+    top: 930px;
+}
+
+.align {
+    text-align: center;
+}
+
+
+button {
+    font-family: cursive;
+    font-size: 30px;
+    width: 80px;
+}
+
+#echo {
+    position:absolute;
+    top: 1330px;
+}
+
+#foxtrot {
+    position:absolute;
+    top: 1330px;
+}
+
+
+
+
+/* Animação para desaparecer e aparecer */
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
+
+/* Definição das animações */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    border: solid 2px rgb(83, 40, 0);
+    z-index: 1;
+}
+
+.card-b {
+    z-index: 2;
+    background-color: rgb(0, 0, 0);
+}
+.card-b:hover {
+    background-color: rgb(43, 255, 0);
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    border: solid 2px rgb(83, 40, 0);
+    background-color: white;
+}
+
+
+.titulo-escondido {
+    position: relative;
+    top: 58px;
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+}
+
+.botão-hover-de-ver-o-desenvolimento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    border: solid 2px rgb(83, 40, 0);
+    background-color: rgb(217, 255, 0);
+    color: rgb(217, 255, 0);
+}
+.botão-hover-de-ver-o-desenvolimento:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+
+    .titulo-escondido {
+        display: none;
+    }
+}
+
+.botão-hover-de-ver-o-desenvolimento:hover + .titulo-escondido {
+    display: none;
+}
+
+.hidden {
+    top: -100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000px;
+}
+
+.copyright {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(83, 40, 0);
+    padding: 10px;
+    color: rgb(217, 255, 0);
+}

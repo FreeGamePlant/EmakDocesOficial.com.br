@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMAK DOCES</title>
+
+    <style>
+        body {
+    background-color: rgb(255, 114, 161);
+}
+
+h1 {
+    color: rgb(83, 40, 0);
+    text-align: center;
+    font-family: cursive;
+    background-color: white;
+    border: solid 2px rgb(83, 40, 0);
+}
+
+a {
+    color: rgb(83, 40, 0);
+    text-decoration: none;
+}
+
+.s {
+    background-color: white;
+    padding: 4px;
+}
+.s:hover {
+    background-color: black;
+    color: white;
+}
+
+.l {
+    background-color: rgb(255, 255, 255);
+    padding: 4px;
+}
+.l:hover {
+    background-color: black;
+    color: white;
+}
+
+.c {
+    background-color: rgb(255, 255, 255);
+    padding: 4px;
+}
+.c:hover {
+    background-color: black;
+    color: white;
+}
+
+.i {
+    background-color: rgb(255, 255, 255);
+    padding: 4px;
+}
+.i:hover {
+    background-color: black;
+    color: white;
+}
+
+.conteiner-alpha {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px rgb(83, 40, 0);
+    position: relative;
+    top: -23px;
+    background-color: white;
+    padding: 5px;
+    word-spacing: 5px;
+    flex-wrap: wrap;
+}
+
+.f {
+    background-color: rgb(255, 209, 209);
+}
+
+#sobre {
+    background-color: #ffffff;
+    border: dashed 5px rgb(255, 0, 0);
+    padding: 5px;
+    word-spacing: 5px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: solid 5px rgb(255, 0, 0);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    border: solid 2px rgb(83, 40, 0);
+    background-color: white;
+}
+
+h2 {
+    color: rgb(83, 40, 0);
+    text-align: center;
+    font-family: cursive;
+    background-color: white;
+    border: solid 2px rgb(83, 40, 0);
+}
+
+.esquerda {
+    display: inline-block;
+    background-color: violet;
+    border: solid 2px rgb(83, 40, 0);
+    padding: 10px;
+    border-radius: 45%;
+    margin: 0 auto;
+    position:absolute;
+    left: 1%;
+}
+
+.direita {
+    display: inline-block;
+    background-color: violet;
+    border: solid 2px rgb(83, 40, 0);
+    padding: 10px;
+    border-radius: 45%;
+    margin: 0 auto;
+    align-items: right;
+    justify-self: end;
+    position: absolute;
+    right: 1%;
+}
+
+.ok {
+    display: inline-block;
+    background-color: violet;
+    border: solid 2px rgb(83, 40, 0);
+    padding: 10px;
+    border-radius: 45%;
+    margin: 0 auto;
+    align-items: center;
+    justify-self: center;
+    position: absolute;
+    top: 24px;
+}
+.ok:hover {
+    background-color: black;
+    color: white;
+}
+
+#alpha {
+    position:absolute;
+    top: 535px;
+}
+
+#beta {
+    position:absolute;
+    top: 535px;
+}
+
+#charle {
+    position:absolute;
+    top: 930px;
+}
+
+#delta {
+    position:absolute;
+    top: 930px;
+}
+
+.align {
+    text-align: center;
+}
+
+
+button {
+    font-family: cursive;
+    font-size: 30px;
+    width: 80px;
+}
+
+#echo {
+    position:absolute;
+    top: 1330px;
+}
+
+#foxtrot {
+    position:absolute;
+    top: 1330px;
+}
+
+
+
+
+/* Animação para desaparecer e aparecer */
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
+
+/* Definição das animações */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    border: solid 2px rgb(83, 40, 0);
+    z-index: 1;
+}
+
+.card-b {
+    z-index: 2;
+    background-color: rgb(0, 0, 0);
+}
+.card-b:hover {
+    background-color: rgb(43, 255, 0);
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    border: solid 2px rgb(83, 40, 0);
+    background-color: white;
+}
+
+
+.titulo-escondido {
+    position: relative;
+    top: 22px;
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+}
+
+.botão-hover-de-ver-o-desenvolimento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    border: solid 2px rgb(83, 40, 0);
+    background-color: rgb(217, 255, 0);
+    color: rgb(217, 255, 0);
+}
+.botão-hover-de-ver-o-desenvolimento:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+
+    .titulo-escondido {
+        display: none;
+    }
+}
+
+.botão-hover-de-ver-o-desenvolimento:hover + .titulo-escondido {
+    display: none;
+}
+
+.hidden {
+    top: -100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000px;
+}
+
+.copyright {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(83, 40, 0);
+    padding: 10px;
+    color: rgb(217, 255, 0);
+}
+.galeria-bolos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Agora são 4 colunas */
+    gap: 16px;
+    max-width: 1200px; /* Aumente o max-width para caber 4 imagens */
+    margin: 0 auto 30px auto;
+    padding: 10px;
+}
+
+.galeria-bolos img {
+    width: 100%;
+    height: auto;
+    border: solid 3px rgb(255, 0, 0);
+    border-radius: 8px;
+    background: #fff;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .galeria-bolos {
+        grid-template-columns: 4fr;
+    }
+}
+
+/* ...existing code... */
+.galeria-bolos img.expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 90vw;
+    height: auto;
+    max-width: 600px;
+    max-height: 90vh;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 30px rgba(0,0,0,0.8);
+    border: solid 5px rgb(255, 0, 0);
+    background: #fff;
+    cursor: zoom-out;
+}
+/* Bloqueia o scroll do body quando expandido */
+body.no-scroll {
+    overflow: hidden;
+}
+/* ...existing code... */
+.heart-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+.heart {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.2s;
+}
+
+.heart.liked {
+    color: #e63946;
+}
+
+/* ...existing code... */
+.button {
+    display: flex;
+    background-color: violet;
+    border: solid 2px rgb(83, 40, 0);
+    padding: 10px;
+    border-radius: 4%;
+    margin: 0 auto 10px auto;
+    position: relative;
+    top: -24px;
+    font-size: 1.1em;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(83,40,0,0.08);
+    outline: none;
+}
+.button:hover, .button:focus {
+    background: #ffb3e6;
+    color: #4d1a00;
+    transform: scale(1.05) rotate(-2deg);
+    box-shadow: 0 4px 16px rgba(255,0,128,0.15);
+    border-color: #e63946;
+}
+
+.tabela-img {
+    display: none; /* Escondido por padrão */
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    animation: fadeInTabela 0.5s;
+    max-width: 100vw;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+}
+
+.tabela-img img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 12px;
+    border: 3px solid #e63946;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    animation: popTabela 0.5s;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    background: white;
+}
+@keyframes fadeInTabela {
+    from { opacity: 0; transform: scale(0.95);}
+    to { opacity: 1; transform: scale(1);}
+}
+@keyframes popTabela {
+    0% { transform: scale(0.8);}
+    80% { transform: scale(1.05);}
+    100% { transform: scale(1);}
+}
+    </style>
+</head>
+<body>
+    <h1>EMAK DOCES CONFEITARIA</h1>
+
+    <div class="conteiner-alpha">    
+        <a href="sobre.html" class="s">Sobre nós</a>
+        <a href="https://maps.app.goo.gl/yiDccpFEXkhCpHXS6" class="l" target="_blank">Localização</a>
+        <a class="c">Contato : 48 99165-2058</a>
+        <a href="https://www.threads.com/@emak_doces?xmt=AQGzUXo4q212_oANC7wBJuychwciswhXmAb8zpHJPRCcmTU" class="i" target="_blank">INSTAGRAM</a>
+    </div>
+
+    <h2>❤️ Feito com Amor e Carinho ❤️</h2>
+
+    <div class="galeria-bolos">
+        <img src="bolo1.jpg" alt="produtos">
+    </div>
+
+<p class="descricaoBolos button">Ver Detalhes dos Bolos</p>
+<p class="descricaoDoces button">Ver Detalhes dos Doces</p>
+<p class="descricaoSalgados button">Ver Detalhes dos Salgados</p>
+<p class="descricaoPudim button"><!--Ver Detalhes do Pudim-->Ver Detalhes dos Cupckaes e tortas</p>
+<p class="descricaoPizzas button">Ver detalhes de encomendas</p>
+
+<!-- Adicione as divs das tabelas aqui -->
+<div id="tabela-bolos" class="tabela-img"><img src="tabela2.jpg" alt="Tabela Bolos"></div>
+<div id="tabela-doces" class="tabela-img"><img src="tabela3.jpg" alt="Tabela Doces"></div>
+<div id="tabela-salgados" class="tabela-img"><img src="tabela5.jpg" alt="Tabela Salgados"></div>
+<div id="tabela-pudim" class="tabela-img"><img src="tabela4.jpg" alt="Tabela Pudim"></div>
+<div id="tabela-pizzas" class="tabela-img"><img src="tabela1.jpg" alt="Tabela Pizzas"></div>
+
+<div class="galeria-bolos"></div>
+<div class="galeria-bolos"></div>
+
+    
+<!--ISTO FOI REJEITADO PELA AUTORA-->
+    <!--<div class="container">
+        <div class="card">
+            <img id="imagem-bolos" src="bolo1.jpg" alt="Bolos">
+            <h2>Bolos</h2>
+            <button id="alpha" class="esquerda" onclick="trocarImagemBolos(-1)"><</button>
+            <button id="beta" class="direita" onclick="trocarImagemBolos(1)">></button>
+        </div>
+        <div class="card">
+            <img id="imagem-doces" src="doc.jpg" alt="Doces">
+            <h2>Doces</h2>
+            <button id="charle" class="esquerda" onclick="trocarImagemDoces(-1)"><</button>
+            <button id="delta" class="direita" onclick="trocarImagemDoces(1)">></button>
+        </div>
+        <div class="card">
+            <img id="imagem-pizzas" src="p.jpg" alt="salgados">
+            <h2>Salgados</h2>
+            <button id="echo" class="esquerda" onclick="trocarImagemPizzas(-1)"><</button>
+            <button id="foxtrot" class="direita" onclick="trocarImagemPizzas(1)">></button>
+        </div>
+    </div>-->
+<!--ISTO FOI REJEITADO PELA AUTORA-->
+
+    <div class="container">
+        <div class="card-b">
+            <div class="contato">
+                    <h2>Contato</h2>
+                    <p>Para encomendas e informações, entre em contato conosco:</p>
+                    <p>Telefone: 48 99165-2058</p>
+                    <p>Email:andreiadepa2017@gmail.com</p>
+                    <p>Instagram: @emak_doces</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card-c">
+            <div class="localizacao">
+                <h2>Localização</h2>
+                <p>Estamos localizados em Palhoça, SC.</p>
+                <p>Você pode nos encontrar facilmente através do Google Maps.</p>
+                <iframe class="mapa"
+                title="Google Maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.123456789!2d-48.6345161!3d-27.8247543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95272fde624928ff%3A0x83c53880513db6a6!2sEmak!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="titulo-escondido">
+        <h2>EMAK DOCES ©</h2>
+    </div>
+
+    <div class="botão-hover-de-ver-o-desenvolimento">
+        <h3 class="copyright">copyright © 05 / 05 / 2025 All Rights Reserved</h3>
+        <h3 class="copyright">Autor do site : Andreia Depa (EMAK)</h3>
+        <h3 class="copyright">Desenvolvedor : Elai Leonel Figueroa (FGP)</h3>
+    </div>
+<script>
+const imagensBolos = [
+    "bolo1.jpg",
+    "bolo2.jpg",
+    "bolo3.jpg",
+    "bolo4.jpg",
+    "bolo5.jpg",
+    "bolo6.jpg",
+    "bolo7.jpg",
+    "bolo8.jpg",
+    "bolo9.jpg",
+    "bolo10.jpg",
+    "bolo11.jpg",
+    "bolo12.jpg",
+    "bolo13.jpg",
+    "bolo14.jpg",
+    "bolo15.jpg",
+    "doc.jpg",
+    "p.jpg",
+    "p2.jpg",
+    "p3.jpg",
+    "p4.jpg",
+    "p5.jpg",
+    "pudim.jpg",
+    "IMG_20250312_185559 (1).png",
+    "IMG_20250314_111814.png",
+    "IMG_20250314_195532.png",
+    "IMG_20250315_220351.png",
+    "IMG_20250321_163042.png",
+    "IMG_20250326_211938.png",
+    "IMG_20250327_150733.png",
+    "IMG_20250330_163347.png",
+    "IMG_20250503_144029.png",
+    "Photoroom-20240622_153424.png",
+    "Photoroom-20240629_133951.png",
+    "Photoroom-20240629_134114.png",
+    "Photoroom-20240629_142002.png",
+    "Photoroom-20240630_150440.png",
+    "Photoroom-20240703_125044.png",
+    "Photoroom-20240705_151411.png",
+    "Photoroom-20240706_152405.png",
+    "Photoroom-20240707_120721.png",
+    "Photoroom-20240720_214119.png",
+    "Photoroom-20240811_193921.png",
+    "Photoroom-20240921_140801.png",
+    "Photoroom-20240901_092952.png",
+    "Photoroom-20240824_181628.png",
+    "Photoroom-20241019_181858.png",
+    "Photoroom-20241126_164407.png",
+    "Photoroom-20241129_154843.png",
+    "Photoroom-20241110_101512.png",
+    "IMG_8696250340162780550.png",
+    "IMG_7284323986312382054.png",
+    "IMG_3274251026591302539.png",
+    "IMG_2474495283894160285.png",
+    "IMG_20250523_165026.png",
+    "IMG_20250514_182555.png",
+    "IMG_20250504_142434.png",
+    "IMG_20250407_133149.png",
+    "IMG_20250502_164233.png",
+    "Photoroom-20240706_164716.png",
+    "Photoroom-20240912_142835.png",
+    "s.jpg",
+];
+
+// Seleciona o container da galeria
+const galeria = document.querySelector('.galeria-bolos');
+
+// Limpa qualquer imagem existente (caso tenha uma no HTML)
+galeria.innerHTML = "";
+
+// Carrega os corações curtidos do localStorage (ou cria um objeto vazio)
+let heartsState = {};
+try {
+    heartsState = JSON.parse(localStorage.getItem('heartsState')) || {};
+} catch {
+    heartsState = {};
+}
+
+// Adiciona todas as imagens dinamicamente e aplica o evento de expandir/recolher e coração
+imagensBolos.forEach((src, idx) => {
+    // Cria um container para imagem + coração
+    const wrapper = document.createElement('div');
+    wrapper.style.display = 'flex';
+    wrapper.style.flexDirection = 'column';
+    wrapper.style.alignItems = 'center';
+
+    // Cria a imagem
+    const img = document.createElement('img');
+    img.src = src;
+    img.alt = "Bolo";
+    img.addEventListener('click', function () {
+        if (img.classList.contains('expanded')) {
+            img.classList.remove('expanded');
+            document.body.classList.remove('no-scroll');
+        } else {
+            document.querySelectorAll('.galeria-bolos img.expanded').forEach(el => el.classList.remove('expanded'));
+            img.classList.add('expanded');
+            document.body.classList.add('no-scroll');
+        }
+    });
+
+    // Cria o coração
+    const heartContainer = document.createElement('div');
+    heartContainer.className = 'heart-container';
+    const heart = document.createElement('span');
+    heart.className = 'heart';
+    // Usa o índice como chave para salvar o estado
+    if (heartsState[idx]) {
+        heart.classList.add('liked');
+        heart.innerHTML = '♥';
+    } else {
+        heart.innerHTML = '♡';
+    }
+
+    heart.addEventListener('click', function (e) {
+        e.stopPropagation(); // Não expande a imagem ao clicar no coração
+        heart.classList.toggle('liked');
+        const liked = heart.classList.contains('liked');
+        heart.innerHTML = liked ? '♥' : '♡';
+        heartsState[idx] = liked;
+        localStorage.setItem('heartsState', JSON.stringify(heartsState));
+    });
+
+    heartContainer.appendChild(heart);
+
+    // Monta tudo
+    wrapper.appendChild(img);
+    wrapper.appendChild(heartContainer);
+    galeria.appendChild(wrapper);
+});
+
+
+/// ...código da galeria e corações...
+
+// Função para mostrar/esconder a tabela correspondente (toggle)
+function mostrarTabela(id) {
+    const tabela = document.getElementById(id);
+    if (!tabela) return;
+    // Se já está visível, oculta
+    if (tabela.style.display === 'flex') {
+        tabela.style.display = 'none';
+    } else {
+        // Esconde todas as outras
+        document.querySelectorAll('.tabela-img').forEach(div => div.style.display = 'none');
+        tabela.style.display = 'flex';
+    }
+}
+
+// Adiciona eventos aos botões (depois da função!)
+const btnBolos = document.querySelector('.descricaoBolos');
+if (btnBolos) btnBolos.onclick = () => mostrarTabela('tabela-bolos');
+const btnDoces = document.querySelector('.descricaoDoces');
+if (btnDoces) btnDoces.onclick = () => mostrarTabela('tabela-doces');
+const btnPizzas = document.querySelector('.descricaoPizzas');
+if (btnPizzas) btnPizzas.onclick = () => mostrarTabela('tabela-pizzas');
+const btnPudim = document.querySelector('.descricaoPudim');
+if (btnPudim) btnPudim.onclick = () => mostrarTabela('tabela-pudim');
+const btnSalgados = document.querySelector('.descricaoSalgados');
+if (btnSalgados) btnSalgados.onclick = () => mostrarTabela('tabela-salgados');
+
+
+// ...restante do código...
+console.log("BEM VINDO A EMAK DOCES!");
+console.log("Copyright © 05 / 05 / 2025 All Right Reserved");
+console.log("Autor do site : Andreia Depa (EMAK)");
+console.log("Desenvolvedor : Elai Leonel Figueroa (FGP)");
+console.log("As Imagens dos produtos são reais da Emak, e foram tiradas por Andreia Depa, as imagens de seu produto possuem direitos autorais, e não podem ser usadas sem autorização, apenas é permitido o dowload/print para mostrar a sua referencia de pedido para a confeiteira, e não para fins comerciais, ou de uso pessoal, sem autorização da confeiteira.");
+</script>
+</body>
+</html>
