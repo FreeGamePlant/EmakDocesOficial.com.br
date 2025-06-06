@@ -664,19 +664,6 @@ imagensBolos.forEach((src, idx) => {
         heart.innerHTML = liked ? '♥' : '♡';
         heartsState[idx] = liked;
         localStorage.setItem('heartsState', JSON.stringify(heartsState));
-
-        // Integração com backend Flask
-        if (liked) {
-           fetch('http://localhost:5000/enviar-curtida', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: 'produto=' + encodeURIComponent(img.src)
-        })
-            .then(resp => resp.ok ? alert("Produto curtido! Notificação enviada para o e-mail.") : alert("Erro ao enviar notificação."))
-            .catch(() => alert("Erro ao enviar notificação."));
-        }
-    });
-
     heartContainer.appendChild(heart);
     wrapper.appendChild(img);
     wrapper.appendChild(heartContainer);
