@@ -723,13 +723,13 @@ function renderGaleria() {
             heartsState[idxOriginal] = liked;
             localStorage.setItem('heartsState', JSON.stringify(heartsState));
             if (liked) {
-                fetch('http://localhost:5000/curtir', {
+                fetch('https://emak-doces-backend-1.onrender.com/curtir', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ img: src })
                 }).then(() => atualizarCurtidasPublicas());
             } else {
-                fetch('http://localhost:5000/descurtir', {
+                fetch('https://emak-doces-backend-1.onrender.com/descurtir', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ img: src })
@@ -760,7 +760,7 @@ function renderGaleria() {
 
         // Atualiza o número de curtidas públicas
         function atualizarCurtidasPublicas() {
-            fetch('http://localhost:5000/curtidas')
+            fetch('https://emak-doces-backend-1.onrender.com/curtidas')
                 .then(resp => resp.json())
                 .then(data => {
                     curtidasSpan.textContent = 'Curtidas: ' + (data[src] || 0);
@@ -804,12 +804,16 @@ function mostrarTabela(id) {
 }
 
 function atualizarTotalCurtidasPublicas() {
-    fetch('http://localhost:5000/curtidas')
+    fetch('https://emak-doces-backend-1.onrender.com/curtidas')
         .then(resp => resp.json())
         .then(data => {
             let total = Object.values(data).reduce((a, b) => a + b, 0);
             document.getElementById('total-curtidas-publicas').textContent =
-                'Quantidade de curtidas públicas: ' + total;
+                '❤️ Quantidade de curtidas públicas: ' + total;
+        })
+        .catch(() => {
+            document.getElementById('total-curtidas-publicas').textContent =
+                '❤️ Quantidade de curtidas públicas: (offline)';
         });
 }
 atualizarTotalCurtidasPublicas();
